@@ -5,7 +5,7 @@ Navigate to the link below to see the results for experiment 1, which are publis
 http://rpubs.com/nbirkner/experiment1_results
 ### Instructions to Recreate Analysis
 1. Download the Excel file [Exp1_Levels_of_Offensiveness.Rmd](experiment1/Exp1_Levels_of_Offensiveness.Rmd)
-2. Download the R Markdown file [Raw_Language Attitudes_February232020.xlsx](experiment1/Raw_Language Attitudes_February232020.xlsx)
+2. Download the R Markdown file [Raw_LanguageAttitudes_February232020.xlsx](experiment1/Raw_LanguageAttitudes_February232020.xlsx)
 
 ## Experiment 2: Five Words to Describe Gringo
 
@@ -24,4 +24,4 @@ http://rpubs.com/nbirkner/thesis_graphs1
 6. Run the analysis
 
 ### Raw data
-You can find the raw data and initial analyses by navigating to the file [Raw_Data_Initial_Analyses.xlsx](Raw_Data_Initial_Analyses.xlsx)
+You can find the raw data and initial analyses by navigating to the file [Raw_Data_Initial_Analyses.xlsx](experiment2/Raw_Data_Initial_Analyses.xlsx)

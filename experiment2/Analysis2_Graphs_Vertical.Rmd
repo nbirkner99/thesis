@@ -1,0 +1,117 @@
+---
+title: 'Analysis 1 - Normalization by Country & Category (Vertical)'
+author: "Nicole Birkner"
+date: "10/25/2020"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(tidyverse)
+library(stats)
+library(readxl)
+getwd()
+df <- read_xlsx("Vertical_Matrix.xlsx")
+```
+
+## Word 1
+
+```{r}
+w1 <- df %>% filter(w1_perc!=0)
+
+library(ggplot2)
+p<-ggplot(w1, aes(x=factor(Category, levels=c("Geography & Language", 
+     "Race & Ethnicity", "Otherness","Negative", "Neutral", "Positive",
+     "Culture", "Others & Unsure")), y = w1_perc, fill=Country)) + 
+      geom_bar(stat="identity", position=position_dodge())
+p + labs(title="Word 1") + 
+  xlab("Category") + ylab("Normalized Percentage") + 
+  coord_flip()
+```
+
+\newpage
+
+## Word 2
+
+```{r}
+w2 <- df %>% filter(w2_perc!=0)
+
+library(ggplot2)
+p<-ggplot(w2, aes(x=factor(Category, levels=c("Geography & Language", 
+                                              "Race & Ethnicity",
+                                              "Otherness","Negative",
+                                              "Neutral", "Positive",
+                                              "Culture",
+                                              "Others & Unsure")), 
+   y = w2_perc, fill=Country)) + geom_bar(stat="identity", position=position_dodge())
+
+p + labs(title="Word 2") + 
+  xlab("Category") + ylab("Normalized Percentage") + 
+  coord_flip()
+```
+
+\newpage
+
+## Word 3
+
+```{r}
+w3 <- df %>% filter(w3_perc!=0)
+
+library(ggplot2)
+p<-ggplot(w3, aes(x=factor(Category, levels=c("Geography & Language", 
+                                              "Race & Ethnicity",
+                                              "Otherness","Negative",
+                                              "Neutral", "Positive",
+                                              "Culture",
+                                              "Others & Unsure")), 
+   y = w3_perc, fill=Country)) + geom_bar(stat="identity", position=position_dodge())
+
+p + labs(title="Word 3") + 
+  xlab("Category") + ylab("Normalized Percentage") + 
+  coord_flip()
+```
+
+\newpage
+
+## Word 4
+
+```{r}
+w4 <- df %>% filter(w4_perc!=0)
+
+library(ggplot2)
+p<-ggplot(w4, aes(x=factor(Category, levels=c("Geography & Language", 
+                                              "Race & Ethnicity",
+                                              "Otherness","Negative",
+                                              "Neutral", "Positive",
+                                              "Culture",
+                                              "Others & Unsure")), 
+   y = w4_perc, fill=Country)) + geom_bar(stat="identity", position=position_dodge())
+
+p + labs(title="Word 4") + 
+  xlab("Category") + ylab("Normalized Percentage") + 
+  coord_flip()
+```
+
+\newpage
+
+## Word 5
+
+```{r}
+w5 <- df %>% filter(w5_perc!=0)
+
+library(ggplot2)
+p<-ggplot(w3, aes(x=factor(Category, levels=c("Geography & Language", 
+                                              "Race & Ethnicity",
+                                              "Otherness","Negative",
+                                              "Neutral", "Positive",
+                                              "Culture",
+                                              "Others & Unsure")), 
+   y = w3_perc, fill=Country)) + geom_bar(stat="identity", position=position_dodge())
+
+p + labs(title="Word 5") + 
+  xlab("Category") + ylab("Normalized Percentage") + 
+  coord_flip()
+```
